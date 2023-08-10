@@ -1,8 +1,25 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
+import { Canvas } from '@react-three/fiber'
+
+function App() {
+  return (
+    <div id="canvas-container">
+        <Canvas>
+        <ambientLight  />
+        <directionalLight  position={[0, 0, 5]} />
+        <mesh>
+            <boxGeometry />
+            <meshStandardMaterial />
+        </mesh>
+        </Canvas>
+    </div>
+  )
+}
+
 
 function render() {
-  ReactDOM.render(<h2>Hello from React!</h2>, document.body);
+  ReactDOM.render(<App/>, document.body);
 }
 
 render();
