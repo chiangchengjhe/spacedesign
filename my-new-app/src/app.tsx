@@ -1,6 +1,6 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom';
 import { Canvas } from '@react-three/fiber'
+import { createRoot } from 'react-dom/client';
 
 function App() {
   return (
@@ -16,10 +16,8 @@ function App() {
     </div>
   )
 }
+// After
+const container = document.getElementById('app');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<App/>);
 
-
-function render() {
-  ReactDOM.render(<App/>, document.body);
-}
-
-render();
