@@ -6,6 +6,7 @@ import Box from '@mui/joy/Box';
 // import useScript from './useScript';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header'
+import Threecanvas from './components/threecanvas'
 // import MyProfile from './components/MyProfile';
 
 const useEnhancedEffect =
@@ -67,6 +68,7 @@ export default function JoyOrderDashboardTemplate() {
             overflow: 'auto',
           })}
         >
+          <Threecanvas />
           {/* <MyProfile /> */}
         </Box>
       </Box>
