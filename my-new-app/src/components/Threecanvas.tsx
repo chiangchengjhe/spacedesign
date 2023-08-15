@@ -1,4 +1,4 @@
-import { Edges, OrbitControls } from "@react-three/drei";
+import { Edges, OrbitControls, TrackballControls, TransformControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 
@@ -7,17 +7,18 @@ export default function Threecanvas(){
     return (
         <Canvas>
 
-    <OrbitControls>
     <ambientLight  />
+
         <directionalLight  position={[0, 0, 5]} />
+        <OrbitControls />
         <mesh>
             <boxGeometry />
-            <Edges/>
             <meshStandardMaterial />
+            <Edges/>
         </mesh>
-    </OrbitControls>
 
         </Canvas>
+
     )
 
 }
