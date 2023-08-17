@@ -20,6 +20,7 @@ import Sheet from '@mui/joy/Sheet';
 // import MuiLogo from './MuiLogo';
 // import ColorSchemeToggle from './ColorSchemeToggle';
 import { closeSidebar } from '../utils';
+import Threecanvas from './Threecanvas';
 
 const Dropdown = styled('i')(({ theme }) => ({
   color: theme.vars.palette.text.tertiary,
